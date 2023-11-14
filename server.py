@@ -29,10 +29,10 @@ def main():
 
         if all_selected_loc:
             selected_locations = location_options
-            st.multiselect("Select Locations", location_options, disabled=True)
+            st.multiselect("Select Locations", location_options)
         else:
             # Use multiselect to allow selecting multiple locations
-            selected_locations = st.multiselect("Select Locations", location_options, disabled=False)
+            selected_locations = st.multiselect("Select Locations", location_options)
 
 
     with st.sidebar.expander("Alert Type"):
@@ -42,10 +42,10 @@ def main():
 
         if all_selected_al:
             selected_alerts = alert_options
-            st.multiselect("Select Alert Types", alert_options, disabled=True)
+            st.multiselect("Select Alert Types", alert_options)
         else:
             # Use multiselect to allow selecting multiple alerts
-            selected_alerts = st.multiselect("Select Alert Types", alert_options, disabled=False)
+            selected_alerts = st.multiselect("Select Alert Types", alert_options)
 
     # Set the title dynamically based on selected filters
     title = "Alert Graphs"
