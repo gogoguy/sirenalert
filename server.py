@@ -29,7 +29,7 @@ def main():
 
         if all_selected_loc:
             selected_locations = location_options
-            st.multiselect("Select Locations", location_options, disabled=True)
+            st.multiselect("Select Locations", location_options)
         else:
             # Use multiselect to allow selecting multiple locations
             selected_locations = st.multiselect("Select Locations", location_options)
