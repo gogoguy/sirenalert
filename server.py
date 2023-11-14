@@ -84,7 +84,7 @@ def main():
     # Simulate live updates every 5 seconds
     while True:
         # Simulate waiting for updates
-        time.sleep(0)
+        time.sleep(1)
 
         # Update the data
         data = simulate_live_update()
